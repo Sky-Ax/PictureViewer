@@ -22,7 +22,6 @@ const test = () => {
       </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
 
