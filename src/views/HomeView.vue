@@ -11,7 +11,7 @@
     <el-button type="info">Info</el-button>
     <el-button type="warning">Warning</el-button>
     <el-button type="danger">Danger</el-button>
-    <div>
+    <div class="mt-10">
       <el-card style="max-width: 480px">
         <template #header>
           <div class="card-header">
