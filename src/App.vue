@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
 import HelloWorld from "./components/HelloWorld.vue"
+import { useDark, useToggle } from "@vueuse/core"
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 
 </script>
 
@@ -12,6 +16,7 @@ import HelloWorld from "./components/HelloWorld.vue"
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <el-button type="primary" @click="toggleDark()">toggle: {{ isDark }}</el-button>
       </nav>
     </div>
   </header>
